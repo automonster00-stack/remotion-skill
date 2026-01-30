@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remotion Skill for Moltbot 🎬</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 3rem;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .emoji {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature {
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-right: 4px solid #667eea;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .download-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 1rem 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .github-btn {
+            background: #24292e;
+            color: white;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            color: #c7254e;
+            direction: ltr;
+            display: inline-block;
+        }
+
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 1.5rem;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 1rem 0;
+            direction: ltr;
+            text-align: left;
+        }
+
+        .section {
+            margin: 2rem 0;
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        ul {
+            list-style: none;
+            padding-right: 1.5rem;
+        }
+
+        li {
+            padding: 0.5rem 0;
+            padding-right: 1.5rem;
+            position: relative;
+        }
+
+        li::before {
+            content: "✓";
+            color: #667eea;
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+        }
+
+        .links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        .link-btn {
+            padding: 0.75rem 1.5rem;
+            background: #f8f9fa;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            border: 2px solid #667eea;
+        }
+
+        .link-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid #f0f0f0;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .container {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">🎬</div>
+        <h1>Remotion Skill for Moltbot</h1>
+        <p class="subtitle">צור סרטונים בצורה תוכניתית עם React!</p>
+
+        <div class="download-section">
+            <h2 style="color: white; margin-bottom: 1rem;">הורד את ה-Skill</h2>
+            <p style="margin-bottom: 1rem;">קובץ .skill מוכן להתקנה במערכת Moltbot שלך</p>
+            <a href="remotion.skill" class="download-btn" download>📥 הורד remotion.skill</a>
+            <a href="https://github.com/automonster00-stack/remotion-skill" class="download-btn github-btn" target="_blank">⭐ GitHub Repository</a>
+        </div>
+
+        <div class="section">
+            <h2>🎯 מה ה-Skill מאפשר?</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon">✨</div>
+                    <h3>יצירת פרויקטים</h3>
+                    <p>יצירה מהירה עם templates מוכנים</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎥</div>
+                    <h3>רינדור סרטונים</h3>
+                    <p>המרה מקוד React לסרטונים</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎨</div>
+                    <h3>אנימציות מתקדמות</h3>
+                    <p>Spring, interpolation ועוד</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎵</div>
+                    <h3>סנכרון אודיו</h3>
+                    <p>ווויזואליזציות ומוזיקה</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3>Data-Driven</h3>
+                    <p>סרטונים דינמיים מנתונים</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">3️⃣</div>
+                    <h3>Three.js</h3>
+                    <p>אנימציות 3D מתקדמות</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📦 מה כלול בפנים?</h2>
+            <ul>
+                <li><strong>SKILL.md</strong> - מדריך מקיף עם התקנה, workflows וטכניקות</li>
+                <li><strong>advanced-examples.md</strong> - דוגמאות קוד מתקדמות</li>
+                <li><strong>create_and_render.sh</strong> - סקריפט עזר לפקודות נפוצות</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🚀 התקנה מהירה</h2>
+            <p>פשוט הורד את הקובץ <code>remotion.skill</code> והתקן אותו במערכת Moltbot שלך.</p>
+            <div class="code-block">
+# דוגמאות שימוש לאחר ההתקנה:<br>
+"צור לי פרויקט Remotion חדש"<br>
+"רנדר את הסרטון שלי לMP4"<br>
+"צור סרטון עם אנימציית spring"
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💡 דוגמאות שימוש</h2>
+            <ul>
+                <li>יצירת פרויקט חדש עם template audiogram</li>
+                <li>רינדור סרטון ל-MP4 עם הגדרות מותאמות</li>
+                <li>יצירת אנימציות עם spring physics</li>
+                <li>סרטונים דינמיים מונעי-data</li>
+                <li>ווידאו ווייזר עם סנכרון אודיו</li>
+                <li>אנימציות 3D עם Three.js</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🔗 קישורים שימושיים</h2>
+            <div class="links">
+                <a href="https://www.remotion.dev/docs/" class="link-btn" target="_blank">📖 תיעוד Remotion</a>
+                <a href="https://www.remotion.dev/api/" class="link-btn" target="_blank">⚙️ API Reference</a>
+                <a href="https://remotion.dev/discord" class="link-btn" target="_blank">💬 Discord</a>
+                <a href="https://www.remotion.dev/templates" class="link-btn" target="_blank">🎨 Templates</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>⚖️ רישיון</h2>
+            <p>שים לב: Remotion דורש רישיון מסחרי במקרים מסוימים. קרא את <a href="https://github.com/remotion-dev/remotion/blob/main/LICENSE.md" target="_blank" style="color: #667eea;">תנאי הרישיון</a> לפני שימוש מסחרי.</p>
+        </div>
+
+        <footer>
+            <p>נוצר עם 💙 עבור <a href="https://molt.bot" style="color: #667eea; text-decoration: none;">Moltbot</a></p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Based on <a href="https://github.com/remotion-dev/remotion" style="color: #667eea; text-decoration: none;">Remotion</a> by remotion-dev</p>
+        </footer>
+    </div>
+</body>
+</html>
