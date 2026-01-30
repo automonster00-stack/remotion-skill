@@ -1,5 +1,8 @@
 # 🎬 Remotion Skill
 
+🌐 **[דף ההורדה והתיעוד](https://automonster00-stack.github.io/remotion-skill/)**
+
+
 יצרתי לך skill מקיף לעבודה עם Remotion - פריימוורק ליצירת סרטונים עם React!
 
 ## 📦 הקובץ
